@@ -1,0 +1,42 @@
+.container{
+    background: linear-gradient(to bottom, var(--cinza), var(--bege));
+
+    height: 500px;
+    width: 66%;
+
+    color: var(--RoxoEcuro);
+
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+.container_img img{
+    max-width: 100%;
+}
+
+.container_txt{
+    transform: rotate(-3deg);
+    padding-left: 10px;
+    padding-top: 120px;
+}
+
+.container_img h2{
+    font-size: 1.1em;
+    
+    
+}
+
+.container_img p{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+@media (max-width: 975px) {
+    .container{
+        height: 100%;
+    }
+}
+
+

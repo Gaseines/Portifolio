@@ -1,0 +1,25 @@
+.li{
+    display: flex;
+    list-style: circle;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+.p{
+    color: var(--RoxoEcuro);
+}
+.img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: none;
+}
+
+.span{
+    width: 5px;
+    height: 5px;
+    background-color: var(--RoxoEcuro);
+    margin-right: 10px;
+    border-radius: 100%;
+}

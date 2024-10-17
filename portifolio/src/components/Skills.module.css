@@ -1,0 +1,9 @@
+.container{
+    background-color: var(--cinza);
+    width: 34%;
+    padding: 20px;
+
+    backdrop-filter: blur(100%);
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

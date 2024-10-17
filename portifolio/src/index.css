@@ -1,0 +1,22 @@
+:root{
+  --bege: #f7f2ec;
+  --cinza: #b4afbb;
+  --RoxoEcuro: #5c4180;
+  --roxoClaro: #7144ae;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-family: 'padrao', sans-serif;
+}
+
+@font-face {
+  font-family: 'padrao';
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+
+
