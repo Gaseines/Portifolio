@@ -1,11 +1,13 @@
 import styles from './Menu.module.css'
 
+import lettering from '../image/lettering.png'
+
 function Menu() {
     return(
         <header>
         <nav>
             <div className={styles.logo}>
-                <h1>Portfólio</h1>
+                <img src={lettering} />
             </div>
             <ul className={styles.menu}>
                 <li><a href="#sobre">Sobre</a></li>

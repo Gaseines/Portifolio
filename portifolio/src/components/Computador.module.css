@@ -1,7 +1,7 @@
 .container{
     background: linear-gradient(to bottom, var(--cinza), var(--bege));
 
-    height: 500px;
+    height: 53vh;
     width: 66%;
 
     color: var(--RoxoEcuro);

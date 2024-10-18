@@ -1,0 +1,17 @@
+.container{
+    background-color: var(--cinza);
+    width: 34%;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.projeto{
+width: 70%;
+height: 80%;
+
+}
+

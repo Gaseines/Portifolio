@@ -1,9 +1,22 @@
 .container{
     background-color: var(--cinza);
     width: 34%;
+    height: 53vh;
     padding: 20px;
 
     backdrop-filter: blur(100%);
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container_list{
+    display: flex;
+    justify-content: center;
+}
+
+.divisao_list{
+    content: '';
+    width: 2px;
+    margin: 15px 15px 0px 30px;
+    background-color: var(--roxoEscuro);
 }

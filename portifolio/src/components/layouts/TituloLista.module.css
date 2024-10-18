@@ -1,4 +1,6 @@
 h2{
-    color: var(--RoxoEcuro);
+    color: var(--roxoEscuro);
     font-size: 1.3em;
+
+    margin-top: 10px;
 }

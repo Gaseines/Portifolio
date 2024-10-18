@@ -1,6 +1,7 @@
 header {
     background-color: #f7f2ec;
     padding: 15px;
+    height: 9vh;
     
 }
 
@@ -10,9 +11,9 @@ nav {
     align-items: center;
 }
 
-.logo h1 {
-    color: #5c4180;
-    font-weight: 600;
+.logo img {
+    width: 50px;
+    margin-left: 30px;
 }
 
 ul.menu {

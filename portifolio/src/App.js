@@ -4,6 +4,8 @@ import Menu from './components/Menu';
 import Computador from './components/Computador';
 import Skills from './components/Skills';
 import Container from './components/layouts/Container';
+import ProjetoPrincipal from './components/ProjetoPrincipal';
+import Contato from './components/Contato';
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
               <Container>
                 <Computador />
                 <Skills />
+              </Container>
+              <Container>
+                <ProjetoPrincipal />
+                <Contato />
               </Container>
             </main>
               </>
