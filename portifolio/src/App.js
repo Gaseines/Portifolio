@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Container from './components/layouts/Container';
 import ProjetoPrincipal from './components/ProjetoPrincipal';
 import Contato from './components/Contato';
+import OutrosProjetos from './components/OutrosProjetos';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Container>
                 <ProjetoPrincipal />
                 <Contato />
+                <OutrosProjetos />
               </Container>
             </main>
               </>

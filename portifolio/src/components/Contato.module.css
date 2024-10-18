@@ -6,3 +6,24 @@
     flex-direction: column;
     align-items: center;
 }
+
+.container_icones{
+    display: flex;
+}
+
+.icones{
+    max-width: 50px;
+    margin: 20px 40px;
+    cursor: pointer;
+}
+
+.icones:hover{
+    transform: scale(105%);
+}
+
+@media (max-height: 800px) {
+    .icones{
+        margin-top: 5px;
+        width: 40px;
+    }
+}

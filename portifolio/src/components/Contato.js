@@ -3,6 +3,8 @@ import Button from './layouts/Button'
 import Container from './layouts/Container'
 import Item from './layouts/Item'
 import Titulo from './layouts/Titulo'
+import insta from '../image/icone_instagram.png'
+import git from '../image/icone_github.png'
 
 function Contato() {
     return (
@@ -18,8 +20,10 @@ function Contato() {
             </Container>
 
             <Titulo>Redes Sociais</Titulo>
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <div className={styles.container_icones}>
+                <a href="#"><img className={styles.icones} src={insta} alt="" /></a>
+                <a href="#"><img className={styles.icones} src={git} alt="" /></a>
+            </div>
         </div>
     )
 }

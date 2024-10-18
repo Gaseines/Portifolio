@@ -14,6 +14,11 @@
   font-family: 'padrao', sans-serif;
 }
 
+body{
+  overflow: hidden;
+  background-color: var(--bege);
+}
+
 @font-face {
   font-family: 'padrao';
   src: url(./fonts/Poppins-Medium.ttf);

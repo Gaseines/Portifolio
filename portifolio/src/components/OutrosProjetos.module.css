@@ -1,0 +1,23 @@
+.container{
+    width: 34%;
+    height: 38vh;
+    background-color: var(--bege);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.projeto, .projeto2{
+    position: absolute;
+    height: 50%;
+}
+
+.projeto{
+    left: 7vw;
+    top: 22%;
+}
+
+.projeto2{
+    left: 15vw;
+    top: 40%;
+}
