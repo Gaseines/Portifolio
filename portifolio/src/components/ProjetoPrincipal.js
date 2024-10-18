@@ -14,7 +14,7 @@ function ProjetoPrincipal(){
         <div className={styles.container}>
             <Titulo>Projeto Likizoa</Titulo>
             <a href="https://likizoa.com.br">likizoa.com.br</a>
-            <Projeto link={projeto} name={"Projeto Principal"} />
+            <Projeto classe={styles.projeto} link={projeto} name={"Projeto Principal"} />
         </div>
     )
 }

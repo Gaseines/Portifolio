@@ -1,7 +1,7 @@
 .container{
     background: linear-gradient(to bottom, var(--cinza), var(--bege));
 
-    height: 53vh;
+    max-height: 53vh;
     width: 66%;
 
     color: var(--RoxoEcuro);
@@ -9,11 +9,24 @@
     text-align: center;
     padding: 20px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
+.container_img{
+    background-image: url(../image/computador.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 90%;
+}
+
 .container_img img{
-    max-width: 100%;
+    max-width: 80%;
+    display: none;
 }
 
 .container_txt{
@@ -24,7 +37,6 @@
 
 .container_img h2{
     font-size: 1.1em;
-    
     
 }
 

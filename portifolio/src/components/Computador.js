@@ -10,7 +10,6 @@ function Computador() {
                 Gabriel Nunes
             </Titulo>
             <div className={styles.container_img}>
-                <img src={computador} alt="Computador com Gabriel Nunes" />
             </div>
 
         </div>
