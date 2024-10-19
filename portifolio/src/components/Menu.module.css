@@ -2,7 +2,6 @@ header {
     background-color: #f7f2ec;
     padding: 15px;
     height: 9vh;
-    
 }
 
 nav {
@@ -16,17 +15,17 @@ nav {
     margin-left: 30px;
 }
 
-ul.menu {
+.menu {
     list-style: none;
     display: flex;
 }
 
-ul.menu li {
+.menu li {
     margin-left: 20px;
     position: relative;
 }
 
-ul.menu li a {
+.menu li a {
     text-decoration: none;
     color: #5c4180;
     font-weight: 600;
@@ -34,7 +33,7 @@ ul.menu li a {
 }
 
 /* Hover nos botões do menu + linha que corre por baixo */
-ul.menu li a::after {
+.menu li a::after {
     content: '';
     position: absolute;
     width: 0%;
@@ -45,12 +44,12 @@ ul.menu li a::after {
     transition: width 1s ease;
 }
 
-ul.menu li a:hover::after {
+.menu li a:hover::after {
     width: 85%;
 }
 
 /* Hover nos botões do menu (mudança de cor) */
-ul.menu li a:hover {
+.menu li a:hover {
     color: #a97ac4;
 }
 
@@ -65,39 +64,44 @@ ul.menu li a:hover {
     width: 25px;
     height: 3px;
     background-color: #5c4180;
-    margin: 5px;
+    margin: 4px 10px;
     transition: all 0.3s ease;
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
-    ul.menu {
-        display: none;
+@media (max-width: 1100px) {
+
+    .menu {
         flex-direction: column;
         width: 100%;
         background-color: #f7f2ec;
         position: absolute;
         top: 60px;
         left: 0;
-        animation: slideDown 0.5s ease forwards;
+        
     }
 
-    ul.menu.show {
-        display: flex;
-        animation: slideUp 0.5s ease forwards;
+    .logo{
+        z-index: 333;
     }
 
-    ul.menu.hide {
-        animation: slideUp 0.5s ease forwards;
-    }
-
-    ul.menu li {
+    .menu li {
         margin: 15px 0;
         text-align: center;
+        
     }
 
     .hamburguer {
         display: flex;
+        z-index: 333;
+    }
+
+    .slideDown{
+        animation: slideDown 2s ease-in-out forwards;
+    }
+
+    .slideUp{
+        animation: slideUp 2s ease-in-out forwards;
     }
 }
 
@@ -110,6 +114,7 @@ ul.menu li a:hover {
     100% {
         transform: translateY(0);
         opacity: 1;
+        display: flex;
     }
 }
 
@@ -121,5 +126,6 @@ ul.menu li a:hover {
     100% {
         transform: translateY(-100%);
         opacity: 0;
+        display: none;
     }
 }

@@ -24,4 +24,10 @@ body{
   src: url(./fonts/Poppins-Medium.ttf);
 }
 
+@media (max-width: 1100px) {
+  body{
+    overflow: auto;
+  }
+}
+
 

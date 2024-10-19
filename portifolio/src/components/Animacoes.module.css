@@ -1,0 +1,27 @@
+.fade_in{
+    animation: fade_in 2s ease;
+}
+
+@keyframes fade_in {
+    0%{
+        opacity: 0;
+        transform: scale(1%);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+.bottom_top{
+    animation: bottom_top 2s ease;
+}
+
+@keyframes bottom_top {
+    0%{
+        transform: translateY(300%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
