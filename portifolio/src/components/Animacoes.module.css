@@ -25,3 +25,17 @@
         transform: translateY(0%);
     }
 }
+
+.blur{
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
+.focus{
+    filter: none;
+    opacity: 1;
+}
+
+.centro{
+    transform: translate(calc(-55%));
+}

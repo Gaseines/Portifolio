@@ -8,18 +8,23 @@ import ProjetoPrincipal from './components/ProjetoPrincipal';
 import Contato from './components/Contato';
 import OutrosProjetos from './components/OutrosProjetos';
 
+import { useState } from 'react';
+
 function App() {
+
+  const [ isSection, setSection ] = useState(false)
+
   return (
     
       <Router>
           <Routes>
             <Route path='/' element={
               <>
-              <Menu />
+              <Menu setSection={setSection} />
             <main>
               <Container>
                 <Computador />
-                <Skills />
+                <Skills isSection={isSection} />
               </Container>
               <Container>
                 <ProjetoPrincipal />

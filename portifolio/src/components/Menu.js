@@ -6,7 +6,7 @@ import animacao from './Animacoes.module.css'
 import lettering from '../image/lettering.png'
 
 
-function Menu() {
+function Menu({setSection}) {
 
     const burguerRef = useRef(null)
 
@@ -43,10 +43,26 @@ function Menu() {
                 <img src={lettering} />
             </div>
             <ul className={`${styles.menu} ${isDown ? styles.slideDown : styles.slideUp}`}>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#linguagens">Linguagens</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a
+                onMouseEnter={() => {setSection('sobre')}}
+                onMouseLeave={() => setSection(null)}
+                 href="#sobre">
+                    Sobre</a></li>
+                <li><a
+                onMouseEnter={() => {setSection('skills')}}
+                onMouseLeave={() => setSection(null)}
+                 href="#skills">
+                    Skills</a></li>
+                <li><a
+                onMouseEnter={() => setSection('projetos')}
+                onMouseLeave={() => setSection(null)}
+                 href="#projetos">
+                    Projetos</a></li>
+                <li><a
+                onMouseEnter={() => setSection('contato')}
+                onMouseLeave={() => setSection(null)}
+                 href="#contato">
+                    Contato</a></li>
             </ul>
             <div ref={burguerRef} className={styles.hamburguer} id="hamburguer">
                 <span></span>

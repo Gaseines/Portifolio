@@ -19,7 +19,8 @@ import Item from './layouts/Item'
 import Titulo from './layouts/Titulo'
 import TituloLista from './layouts/TituloLista'
 
-function Skills() {
+function Skills({isSection}) {
+    
     const [ isVisible, setVisible ] = useState(false)
 
     useEffect(()=>{
@@ -28,7 +29,7 @@ function Skills() {
 
 
     return (
-        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''}`}>
+        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''} ${isSection === 'sobre' || isSection === 'projetos' || isSection === 'contato' ? animacao.blur : animacao.focus && isSection === 'skills' ? animacao.centro : ''}`}>
             <Titulo classe={styles.titulo}>Skills</Titulo>
             <div className={styles.container_list}>
                 <ul className={styles.ul}>
