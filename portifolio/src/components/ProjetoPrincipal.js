@@ -10,7 +10,7 @@ import Projeto from './layouts/Projeto'
 
 
 
-function ProjetoPrincipal(){
+function ProjetoPrincipal({isSection}){
     const [ isVisible, setVisible] = useState(false)
 
     useEffect(() =>{
@@ -18,7 +18,7 @@ function ProjetoPrincipal(){
     })
 
     return(
-        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''}`}>
+        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''} ${isSection === 'sobre' || isSection === 'projetos' || isSection === 'contato' || isSection === 'skills' ? animacao.blur : animacao.focus}`}>
             <Titulo>Projeto Likizoa</Titulo>
             <a className={styles.a} href="https://likizoa.com.br">likizoa.com.br</a>
             <Projeto classe={styles.projeto} link={projeto} name={"Projeto Principal"} />

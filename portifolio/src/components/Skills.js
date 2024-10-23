@@ -29,7 +29,7 @@ function Skills({isSection}) {
 
 
     return (
-        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''} ${isSection === 'sobre' || isSection === 'projetos' || isSection === 'contato' ? animacao.blur : animacao.focus && isSection === 'skills' ? animacao.centro : ''}`}>
+        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''} ${isSection === 'sobre' || isSection === 'projetos' || isSection === 'contato' ? animacao.blur : animacao.focus && isSection === 'skills' ? animacao.centro_skills : ''}`}>
             <Titulo classe={styles.titulo}>Skills</Titulo>
             <div className={styles.container_list}>
                 <ul className={styles.ul}>

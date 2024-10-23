@@ -36,6 +36,26 @@
     opacity: 1;
 }
 
-.centro{
-    transform: translate(calc(-55%));
+.centro_skills{
+    transform: translate(-94%, 20%);
+    transition: 0.5s ease-in;
+    z-index: 3;
+}
+
+.centro_sobre{
+    transform: translate(30%, 20%);
+    transition: 0.5s ease-in;
+    z-index: 3;
+}
+
+.centro_projetos{
+    transform: translate(-94%, -80%);
+    transition: 0.5s ease-in;
+    z-index: 3;
+}
+
+.centro_contato{
+    transform: translate(0%, -80%);
+    transition: 0.5s ease-in;
+    z-index: 3;
 }

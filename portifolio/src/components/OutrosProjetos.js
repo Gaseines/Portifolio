@@ -11,7 +11,7 @@ import Titulo from './layouts/Titulo'
 
 
 
-function OutrosProjetos(){
+function OutrosProjetos({isSection}){
     const [ isVisible, setVisible] = useState(false)
 
     useEffect(() =>{
@@ -19,7 +19,7 @@ function OutrosProjetos(){
     })
 
     return(
-        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''}`}>
+        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''} ${isSection === 'skills' || isSection === 'sobre' || isSection === 'contato' ? animacao.blur : animacao.focus && isSection === 'projetos' ? animacao.centro_projetos : ''}`}>
             <Titulo> Outros Projetos</Titulo>
             <Projeto link={cafe} classe={styles.projeto}/>
             <Projeto link={wedding} classe={styles.projeto2}/>

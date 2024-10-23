@@ -11,7 +11,7 @@ import insta from '../image/icone_instagram.png'
 import git from '../image/icone_github.png'
 
 
-function Contato() {
+function Contato({isSection}) {
     const [ isVisible, setVisible ] = useState(false)
 
     useEffect(() =>{
@@ -19,7 +19,7 @@ function Contato() {
     })
 
     return (
-        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''}`}>
+        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''} ${isSection === 'sobre' || isSection === 'projetos' || isSection === 'skills' ? animacao.blur : animacao.focus && isSection === 'contato' ? animacao.centro_contato : ''}`}>
             <Titulo>Contato</Titulo>
             <ul>
                 <Item name={"Whatsapp: (47) 99922-6050"} />

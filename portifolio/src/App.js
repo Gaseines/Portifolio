@@ -23,13 +23,13 @@ function App() {
               <Menu setSection={setSection} />
             <main>
               <Container>
-                <Computador />
+                <Computador isSection={isSection} />
                 <Skills isSection={isSection} />
               </Container>
               <Container>
-                <ProjetoPrincipal />
-                <Contato />
-                <OutrosProjetos />
+                <ProjetoPrincipal isSection={isSection} />
+                <Contato isSection={isSection} />
+                <OutrosProjetos isSection={isSection} />
               </Container>
             </main>
               </>

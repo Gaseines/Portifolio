@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 
 import styles from './Computador.module.css'
+import animacao from './Animacoes.module.css'
 import Titulo from './layouts/Titulo'
 
-function Computador() {
+function Computador({isSection}) {
     const mainRef = useRef(null)
     const [isVisible, setVisible] = useState(false)
     const [ isbg, setbg] = useState(false)
@@ -33,7 +34,7 @@ function Computador() {
     })
 
     return (
-        <div  className={`${styles.container} ${isVisible ? styles.fade_in : ''}`}>
+        <div  className={`${styles.container} ${isVisible ? styles.fade_in : ''} ${isSection === 'skills' || isSection === 'projetos' || isSection === 'contato' ? animacao.blur : animacao.focus && isSection === 'sobre' ? animacao.centro_sobre : ''}`}>
             <Titulo>
                 Gabriel Nunes
             </Titulo>
