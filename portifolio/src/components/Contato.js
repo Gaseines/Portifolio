@@ -11,10 +11,10 @@ import insta from '../image/icone_instagram.png'
 import git from '../image/icone_github.png'
 
 
-function Contato({isSection}) {
-    const [ isVisible, setVisible ] = useState(false)
+function Contato({ isSection }) {
+    const [isVisible, setVisible] = useState(false)
 
-    useEffect(() =>{
+    useEffect(() => {
         setVisible(true)
     })
 
@@ -26,8 +26,12 @@ function Contato({isSection}) {
                 <Item name={"Email: gaseinesdzn@hotmail.com"} />
             </ul>
             <div className={styles.container_btn}>
-                <Button name={"WhatsApp"} />
-                <Button name={"Email"} />
+                <a href="https://wa.me/5547999226050?text=Olá%2C+Gabriel!+Encontrei+seu+portfólio+e+gostaria+de+saber+mais+sobre+seus+serviços+como+desenvolvedor+freelancer." target="_blank" rel="noopener noreferrer">
+                    <Button name="WhatsApp" />
+                </a>
+                <a href="mailto:gaseinesdzn@hotmail.com?subject=Interesse%20em%20projeto&body=Olá%20Gabriel,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer">
+                    <Button name="Email" />
+                </a>
             </div>
 
             <Titulo>Redes Sociais</Titulo>
