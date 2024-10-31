@@ -19,7 +19,7 @@ function OutrosProjetos({isSection}){
     })
 
     return(
-        <div className={`${styles.container} ${isVisible ? animacao.fade_in : ''} ${isSection === 'skills' || isSection === 'sobre' || isSection === 'contato' ? animacao.blur : animacao.focus && isSection === 'projetos' ? animacao.centro_projetos : ''}`}>
+        <div id='projetos' className={`${styles.container} ${isVisible ? animacao.fade_in : ''} ${isSection === 'skills' || isSection === 'sobre' || isSection === 'contato' ? animacao.blur : animacao.focus && isSection === 'projetos' ? animacao.centro_projetos : ''}`}>
             <Titulo> Outros Projetos</Titulo>
             <Projeto link={cafe} classe={styles.projeto}/>
             <Projeto link={wedding} classe={styles.projeto2}/>
