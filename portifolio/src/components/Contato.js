@@ -22,7 +22,7 @@ function Contato({ isSection }) {
         <div id='contato' className={`${styles.container} ${isVisible ? animacao.fade_in : ''} ${isSection === 'sobre' || isSection === 'projetos' || isSection === 'skills' ? animacao.blur : animacao.focus && isSection === 'contato' ? animacao.centro_contato : ''}`}>
             <Titulo>Contato</Titulo>
             <ul>
-                <Item name={"Whatsapp: (47) 99922-6050"} />
+                <Item name={"4 anos de estudos"} />
                 <Item name={"Email: gaseinesdzn@hotmail.com"} />
             </ul>
             <div className={styles.container_btn}>
