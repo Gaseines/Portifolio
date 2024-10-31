@@ -16,7 +16,7 @@ function App() {
 
   return (
     
-      <Router>
+      <Router basename='/Portifolio'>
           <Routes>
             <Route path='/' element={
               <>
