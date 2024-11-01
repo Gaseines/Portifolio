@@ -17,7 +17,15 @@
 body{
   overflow: hidden;
   background-color: var(--bege);
+
+  cursor: url('../public/pointer.png') 16 16, auto;
 }
+
+a{
+  cursor: url('../public/pointer_hover.png') 16 16, auto;
+}
+
+
 
 @font-face {
   font-family: 'padrao';

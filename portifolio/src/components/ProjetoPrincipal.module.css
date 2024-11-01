@@ -9,9 +9,7 @@
     
 }
 
-.a{
-    cursor: pointer;
-}
+
 
 .a:hover{
     color: var(--roxoClaro);
