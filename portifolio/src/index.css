@@ -15,7 +15,7 @@
 }
 
 body{
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: var(--bege);
 
   cursor: url('../public/pointer.png') 16 16, auto;

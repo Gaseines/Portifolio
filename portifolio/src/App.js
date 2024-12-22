@@ -1,42 +1,24 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import './App.css';
-import Menu from './components/Menu';
-import Computador from './components/Computador';
-import Skills from './components/Skills';
-import Container from './components/layouts/Container';
-import ProjetoPrincipal from './components/ProjetoPrincipal';
-import Contato from './components/Contato';
-import OutrosProjetos from './components/OutrosProjetos';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Menu from "./components/Menu";
 
-import { useState } from 'react';
+import { useState } from "react";
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
-
-  const [ isSection, setSection ] = useState(false)
+  const [isSection, setSection] = useState(false);
 
   return (
-    
-      <Router basename='/Portifolio'>
-          <Routes>
-            <Route path='/' element={
-              <>
-              <Menu setSection={setSection} />
-            <main>
-              <Container>
-                <Computador isSection={isSection} />
-                <Skills isSection={isSection} />
-              </Container>
-              <Container>
-                <ProjetoPrincipal isSection={isSection} />
-                <Contato isSection={isSection} />
-                <OutrosProjetos isSection={isSection} />
-              </Container>
-            </main>
-              </>
-            } />
-          </Routes>
-      </Router>
-    
+    <BrowserRouter basename="/Portifolio">
+      {/* Menu */}
+      <Menu setSection={setSection} />
+
+      <Routes>
+        <Route path="/" element={<Home isSection={isSection}/>} />
+        <Route path="/About" element={<About />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
