@@ -63,14 +63,14 @@ const About = () => {
             <b>1.</b> Retorno rápido e comunicação clara com o cliente em todas
             as etapas do projeto.
             <img
-              src="https://github.com/Gaseines/imagensPortifolio/blob/main/images/raio.png?raw=true"
+              src="https://github.com/Gaseines/imagens/blob/main/portifolio/raio.png?raw=true"
               alt="raio"
-              className={styles.raio}
+              className={`${styles.raio} ${styles.icone}`}
             />
             <img
-              src="https://github.com/Gaseines/imagensPortifolio/blob/main/balao-de-fala.png?raw=true"
+              src="https://github.com/Gaseines/imagens/blob/main/portifolio/balao-de-fala.png?raw=true"
               alt="balão de conversa"
-              className={styles.conversa}
+              className={`${styles.conversa} ${styles.icone}`}
             />
           </p>
         </div>
@@ -78,6 +78,16 @@ const About = () => {
           <p className={`${styles.diferencial_02} ${styles.diferencial}`}>
             <b>2.</b> Estética e organização do código sempre em primeiro plano,
             garantindo manutenção facilitada.
+            <img
+              src="https://github.com/Gaseines/imagens/blob/main/portifolio/codigo.png?raw=true"
+              alt="codigo"
+              className={`${styles.codigo} ${styles.icone}`}
+            />
+            <img
+              src="https://github.com/Gaseines/imagens/blob/main/portifolio/manutencao.png?raw=true"
+              alt="manutencao"
+              className={`${styles.manutencao} ${styles.icone}`}
+            />
           </p>
         </div>
         <div className={styles.item}>
@@ -85,14 +95,14 @@ const About = () => {
             <b>3.</b> Foco em design minimalista, proporcionando uma experiência
             visual única, sem abrir mão da funcionalidade.
             <img
-              src="https://github.com/Gaseines/imagensPortifolio/blob/main/images/pincel.png?raw=true"
+              src="https://github.com/Gaseines/imagens/blob/main/portifolio/pincel.png?raw=true"
               alt="pincel"
-              className={styles.pincel}
+              className={`${styles.pincel} ${styles.icone}`}
             />
             <img
-              src="https://github.com/Gaseines/imagensPortifolio/blob/main/images/contexto.png?raw=true"
+              src="https://github.com/Gaseines/imagens/blob/main/portifolio/contexto.png?raw=true"
               alt="engrenagem"
-              className={styles.engrenagem}
+              className={`${styles.engrenagem} ${styles.icone}`}
             />
           </p>
         </div>

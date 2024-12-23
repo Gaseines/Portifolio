@@ -58,6 +58,7 @@ function Skills({ isSection }) {
           <TituloLista name={"Outras Habilidades"} />
           <Item name={"Responsive Design"} img={responsive} />
           <Item name={"Photoshop"} img={ps} />
+          <Item name={"Engenharia de Prompt"} img={ps} />
         </ul>
       </div>
     </div>

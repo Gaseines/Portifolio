@@ -84,16 +84,17 @@ function Menu({ setSection }) {
             </Link>
           </li>
           <li>
-            <a
+            <Link
               onClick={handleDown}
+              to={"/Skills"}
               onMouseEnter={() => {
                 setSection("skills");
               }}
               onMouseLeave={() => setSection(null)}
               href="#skills"
             >
-              Skills
-            </a>
+              Habilidades
+            </Link>
           </li>
           <li>
             <a

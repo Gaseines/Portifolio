@@ -1,0 +1,67 @@
+.c_card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  width: 250px;
+  height: 280px;
+  margin: 20px;
+  border: 5px solid white;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  
+
+  animation: up 1s ease-in-out;
+  transition: all 0.5s ease;
+}
+
+.c_card:hover {
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.c_card_active {
+  background: rgb(92, 65, 128);
+}
+
+.c_card_empty {
+  background: rgba(92, 65, 128, 0.548);
+}
+
+.empty {
+  color: var(--cinza);
+  margin: 0 auto;
+  font-size: 8em;
+  height: 170px;
+}
+
+.t_title,
+.d_desc {
+  color: white;
+}
+
+.d_division {
+  background-color: white;
+  width: 50%;
+  height: 1px;
+  margin: 10px auto;
+}
+
+.i_img {
+  width: 100px;
+  margin: 25px auto;
+}
+
+@keyframes up {
+    from{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+        
+    }
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {Link} from 'react-router-dom'
 
 import styles from "./OutrosProjetos.module.css";
 import animacao from "../Animacoes.module.css";
@@ -17,22 +18,23 @@ function OutrosProjetos({ isSection }) {
   },[]);
 
   return (
-    <div
-      id="projetos"
-      className={`${styles.container} ${isVisible ? animacao.fade_in : ""} ${
-        isSection === "skills" ||
-        isSection === "sobre" ||
-        isSection === "contato"
-          ? animacao.blur
-          : animacao.focus && isSection === "projetos"
-          ? animacao.centro_projetos
-          : ""
-      }`}
-    >
-      <Titulo> Outros Projetos</Titulo>
-      <Projeto link={cafe} classe={styles.projeto} />
-      <Projeto link={wedding} classe={styles.projeto2} />
-    </div>
+      <Link
+      to={"/Projects"}
+        id="projetos"
+        className={`${styles.container} ${isVisible ? animacao.fade_in : ""} ${
+          isSection === "skills" ||
+          isSection === "sobre" ||
+          isSection === "contato"
+            ? animacao.blur
+            : animacao.focus && isSection === "projetos"
+            ? animacao.centro_projetos
+            : ""
+        }`}
+      >
+        <Titulo>Projetos</Titulo>
+        <Projeto link={cafe} classe={styles.projeto} />
+        <Projeto link={wedding} classe={styles.projeto2} />
+      </Link>
   );
 }
 
