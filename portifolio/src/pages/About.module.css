@@ -1,44 +1,222 @@
+:root{
+    --deslocamento: -70px
+}
+
 .container {
   display: flex;
   flex-direction: column;
-
+  padding: 20px;
   justify-content: center;
   width: 100%;
   max-width: 1100px;
   margin: auto;
   transform: translateX(-2000px);
+  opacity: 0;
 
-  animation: start 1s ease-in-out forwards;
+  animation: start 1s ease forwards;
+  color: var(--roxoEscuro);
 }
 
 .container h1 {
+  margin: auto;
   margin-bottom: 50px;
+  
+  padding-right: 5px;
+
+  width: 0ch;
+  overflow: hidden;
+
+  white-space: nowrap;
+  animation:  escrita 4s steps(22, end) forwards;
+  animation-delay: .5s;
 }
 
-.container p {
+.sobre, .mais {
   text-align: justify;
 }
 
 .container h2 {
   margin: 20px 0;
+  text-align: center;
 }
 
 .container ul {
-  display: flex;
-  flex-direction: column;
   list-style: none;
 }
 
-.container b {
-  color: var(--roxoEscuro);
+.projetos_relevantes {
+  display: flex;
 }
 
-.destaque{
-    color: var(--roxoClaro);
+.projetos_relevantes li {
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.projetos_relevantes li::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  background-color: var(--roxoEscuro);
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+
+  animation: underline 4s ease-in-out forwards;
+}
+
+.projetos_relevantes p {
+  text-align: justify;
+}
+
+.projetos_relevantes h3 {
+  font-size: 1em;
+  text-align: start;
+}
+
+.destaque {
+  color: var(--roxoClaro);
+}
+
+.container_diferencial{
+    padding-bottom: 20px;
+}
+
+.container_diferencial p{
+    background-color: var(--roxoEscuro);
+    color: var(--bege);
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: justify;
+    position: relative;
+    
+    transition: all 1s ease-out;
+    
+}
+
+.diferencial{
+    animation: upScroll .5s ease-out forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.container_diferencial p:hover{
+    border-radius: 30px;
+    background-color: var(--cinza);
+}
+
+.diferencial_01{
+    margin-left: 20%;
+}
+
+.diferencial_01:hover .raio{
+    right: var(--deslocamento);
+    opacity: 1;
+}
+
+.diferencial_01:hover .conversa{
+    bottom: var(--deslocamento);
+    opacity: 1;
+}
+
+
+.raio{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 16px);
+    opacity: 0;
+
+    transition: right .5s ease-out, opacity .3s ease-out;
+}
+
+.conversa{
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 16px);
+    opacity: 0;
+
+    transition: bottom .5s ease-out, opacity .3s ease-out;
+}
+
+.diferencial_02{
+    margin-left: 70%;
+}
+
+.diferencial_03{
+    margin-left: 35%;
+}
+
+.diferencial_03:hover .engrenagem{
+    right: var(--deslocamento);
+    opacity: 1;
+}
+
+.diferencial_03:hover .pincel{
+    left: var(--deslocamento);
+    opacity: 1;
+}
+
+.engrenagem{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 16px);
+    opacity: 0;
+
+    transition: right .5s ease-out, opacity .3s ease-out;
+}
+
+.pincel{
+    position: absolute;
+    left: 0;
+    top: calc(50% - 16px);
+    opacity: 0;
+
+    transition: left .5s ease-out, opacity .3s ease-out;
+}
+
+
+.finalizacao{
+    
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 @keyframes start {
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
+}
+
+@keyframes underline {
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes barra {
+    50%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes escrita {
+    100%{
+        width: 23ch;
+    }
+}
+
+@keyframes upScroll {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

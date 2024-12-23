@@ -21,7 +21,7 @@ function Menu({ setSection }) {
 
   const handleClick = useCallback(() => {
     setDown((testClick) => !testClick);
-    console.log(isDown);
+    
   }, [isDown]);
 
   useEffect(() => {
@@ -35,6 +35,14 @@ function Menu({ setSection }) {
       burguer.removeEventListener("click", handleClick);
     };
   }, [burguerRef, handleClick]);
+
+
+  //Click Link
+  const handleDown = () =>{
+    if(isDown){
+      setDown(false)
+    }
+  }
 
   return (
     <header className={isVisible ? animacao.bottom_top : ""}>
@@ -51,6 +59,7 @@ function Menu({ setSection }) {
         >
             <li>
             <Link
+              onClick={handleDown}
               to="/"
               onMouseEnter={() => {
                 setSection("home");
@@ -63,6 +72,7 @@ function Menu({ setSection }) {
           </li>
           <li>
             <Link
+              onClick={handleDown}
               to="/About"
               onMouseEnter={() => {
                 setSection("sobre");
@@ -75,6 +85,7 @@ function Menu({ setSection }) {
           </li>
           <li>
             <a
+              onClick={handleDown}
               onMouseEnter={() => {
                 setSection("skills");
               }}
@@ -86,6 +97,7 @@ function Menu({ setSection }) {
           </li>
           <li>
             <a
+              onClick={handleDown}
               onMouseEnter={() => setSection("projetos")}
               onMouseLeave={() => setSection(null)}
               href="#projetos"
@@ -95,6 +107,7 @@ function Menu({ setSection }) {
           </li>
           <li>
             <a
+              onClick={handleDown}
               onMouseEnter={() => setSection("contato")}
               onMouseLeave={() => setSection(null)}
               href="#contato"
