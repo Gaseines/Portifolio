@@ -37,7 +37,7 @@ function Skills({ isSection }) {
           : ""
       }`}
     >
-      <Titulo classe={styles.titulo}>Skills</Titulo>
+      <Titulo classe={styles.titulo}>Habilidades</Titulo>
       <div className={styles.container_list}>
         <ul className={styles.ul}>
           <TituloLista name={"Linguagens"} />
