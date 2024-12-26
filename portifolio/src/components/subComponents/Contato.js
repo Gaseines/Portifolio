@@ -53,14 +53,14 @@ function Contato({ isSection }) {
 
       <Titulo>Redes Sociais</Titulo>
       <div className={styles.container_icones}>
-        <a
+        <a className={styles.img_links}
           target="_blank"
           rel="noreferrer"
           href="https://www.instagram.com/gaseines/"
         >
           <img className={styles.icones} src={insta} alt="" />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://github.com/Gaseines">
+        <a className={styles.img_links} target="_blank" rel="noreferrer" href="https://github.com/Gaseines">
           <img className={styles.icones} src={git} alt="" />
         </a>
       </div>

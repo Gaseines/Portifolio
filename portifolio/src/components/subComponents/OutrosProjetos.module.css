@@ -1,44 +1,59 @@
+:root{
+    --widthP: 150px;
+    --heightP: 170px;
+}
+
 .container{
     width: 34%;
     height: 38vh;
     background-color: var(--bege);
-    display: flex;
-    justify-content: center;
     position: relative;
     transition: 0.5s ease-in-out;
     text-decoration: none;
 }
 
-.projeto, .projeto2{
-    position: absolute;
-    height: 50%;
-}
-
 .projeto{
-    left: 7vw;
-    top: 22%;
+    position: absolute;
+    width: var(--widthP);
+    height: var(--heightP);
+    left: calc(50% - (var(--widthP) / 2));
+    top: calc(50% - (var(--heightP) / 2) + 20px);
 }
 
-.projeto2{
-    left: 15vw;
-    top: 40%;
+.projeto1{
+    left: calc(50% - var(--widthP) - 40px);
+    transform: rotate(-20deg);
+}
+
+.projeto3{
+    left: calc(50% + 40px);
+    transform: rotate(20deg);
 }
 
 @media (max-width: 1100px) {
     .container{
         width: 100%;
-        
-        padding-bottom: 20px;
+        padding: 20px;
         display: block;
         flex-direction: column;
         margin-top: 20px;
         padding-bottom: 20px;
     }
 
-    .projeto, .projeto2{
-        position: static;
-        height: 250px;
+    .projeto{
+        left: calc(50% - 50px);
+        top: calc(50% - 80px);
+        width: 120px;
+        height: 140px;
+        margin-top: 30px;
     }
 
+    .projeto1{
+        left: calc(50% - 120px);
+    }
+
+    .projeto3{
+        left: calc(50% + 20px);
+    }
     
 }

@@ -35,15 +35,14 @@ function Computador({ isSection }) {
   return (
     <div
       id="sobre"
-      className={`${styles.container} ${isVisible ? styles.fade_in : ""} ${
-        isSection === "skills" ||
-        isSection === "projetos" ||
-        isSection === "contato" 
-          ? animacao.blur
-          : animacao.focus && isSection === "sobre"
-          ? animacao.centro_sobre
-          : ""
-      }`}
+      className={`${styles.container} ${isVisible ? animacao.fade_in : ""} ${
+              isSection === "sobre" ||
+              isSection === "projetos" ||
+              isSection === "contato" ||
+              isSection === "skills"
+                ? animacao.blur
+                : animacao.focus
+            }`}
     >
       <Titulo>Gabriel Nunes</Titulo>
       <div

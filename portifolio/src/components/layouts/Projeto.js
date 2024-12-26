@@ -2,9 +2,9 @@ import styles from './Projeto.module.css'
 
 function Projeto({link, name, classe}){
  return(
-    <div className={styles.container_img}>
-      <img src={link} alt={name} className={classe} loading='lazy'/>
-    </div>
+    <>
+      <img src={link} alt={name} className={`${classe} ${styles.i_img}`} loading='lazy'/>
+    </>
  )
 }
 

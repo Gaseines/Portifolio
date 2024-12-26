@@ -1,11 +1,4 @@
-.container_img{
-    height: 27vh;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.container_img img{
+.i_img{
     
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

@@ -13,6 +13,7 @@ import vsCode from "../../image/icone_VSCode.png";
 import node from "../../image/icone_node.png";
 import responsive from "../../image/icone_responsive.png";
 import ps from "../../image/icone_PS.png";
+import ia from '../../image/icone_ia.png'
 
 import Item from "../layouts/Item";
 import Titulo from "../layouts/Titulo";
@@ -58,7 +59,7 @@ function Skills({ isSection }) {
           <TituloLista name={"Outras Habilidades"} />
           <Item name={"Responsive Design"} img={responsive} />
           <Item name={"Photoshop"} img={ps} />
-          <Item name={"Engenharia de Prompt"} img={ps} />
+          <Item name={"Engenharia de Prompt"} img={ia} />
         </ul>
       </div>
     </div>

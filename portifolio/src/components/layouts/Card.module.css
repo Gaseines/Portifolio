@@ -11,8 +11,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-
-  
+  position: relative;
 
   animation: up 1s ease-in-out;
   transition: all 0.5s ease;
@@ -42,6 +41,10 @@
   color: white;
 }
 
+.t_title{
+  padding: 0 5px;
+}
+
 .d_division {
   background-color: white;
   width: 50%;
@@ -54,14 +57,68 @@
   margin: 25px auto;
 }
 
+.c_card::before{
+  content: '';
+  position: absolute;
+  background-color: #c0c0c06c;
+  width: 100%;
+  height: 100%;
+
+  clip-path: polygon(0 100%, 0 100%, 0 100%, 0 100%);
+  
+}
+
+.c_card:hover::before{
+  animation: glimmer .4s cubic-bezier(.68,.33,.69,.93) ;
+}
+
 @keyframes up {
-    from{
-        opacity: 0;
-        transform: translateY(50%);
-    }
-    to{
-        transform: translateY(0);
-        opacity: 1;
-        
-    }
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes glimmer {
+  0%{
+    clip-path: polygon(0 95%, 0 80%, 20% 100%, 1% 100%);
+  }
+  50%{
+    clip-path: polygon(0 20%, 0 0, 100% 100%, 80% 100%);
+  }
+  55%{
+    clip-path: polygon(0 0, 20% 0, 100% 80%, 100% 100%);
+  }
+  100%{
+    clip-path: polygon(80% 0, 97% 0, 100% 2%, 100% 20%);
+  }
+}
+
+@media (max-width: 1100px){
+  .c_card {
+    width: 150px;
+    height: 180px;
+  }
+
+  .i_img{
+    width: 50px;
+    margin: 10px auto;
+  }
+  
+  .t_title{
+    font-size: 1em;
+  }
+
+  .d_desc{
+    font-size: .7em;
+    margin: 5px;
+  }
+
+  .empty{
+    font-size: 3em;
+  }
 }

@@ -3,11 +3,11 @@ import React from "react";
 //Styles
 import styles from "./Card.module.css";
 
-const Card = ({ icon, title, disable, years }) => {
+const Card = ({ icon, title, disable, years, classe }) => {
   return (
     <>
       {disable === false ? (
-        <div className={`${styles.c_card} ${styles.c_card_active}`}>
+        <div className={`${styles.c_card} ${styles.c_card_active} ${classe}`}>
           <img className={styles.i_img} src={icon} />
           <h2 className={styles.t_title}>{title}</h2>
           <div className={styles.d_division}></div>

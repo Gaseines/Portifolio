@@ -9,6 +9,7 @@
 .p{
     color: var(--roxoEscuro);  
     font-size: clamp(12.5px, 2vw, 18px);
+    
 }
 .img{
     width: 20px;
