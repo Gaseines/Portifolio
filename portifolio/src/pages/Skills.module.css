@@ -38,7 +38,7 @@
 
 .right{
   animation: right linear forwards;
-  animation-timeline: view();
+  animation-timeline: view(0px);
   animation-range: cover 0% cover 24%;
 }
 
