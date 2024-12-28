@@ -21,8 +21,7 @@ function Menu({ setSection }) {
 
   const handleClick = useCallback(() => {
     setDown((testClick) => !testClick);
-    
-  }, [isDown]);
+  }, []);
 
   useEffect(() => {
     const burguer = burguerRef.current;
@@ -36,13 +35,12 @@ function Menu({ setSection }) {
     };
   }, [burguerRef, handleClick]);
 
-
   //Click Link
-  const handleDown = () =>{
-    if(isDown){
-      setDown(false)
+  const handleDown = () => {
+    if (isDown) {
+      setDown(false);
     }
-  }
+  };
 
   return (
     <header className={isVisible ? animacao.bottom_top : ""}>
@@ -57,7 +55,7 @@ function Menu({ setSection }) {
             isDown ? styles.slideDown : styles.slideUp
           }`}
         >
-            <li>
+          <li>
             <Link
               onClick={handleDown}
               to="/"
@@ -97,24 +95,26 @@ function Menu({ setSection }) {
             </Link>
           </li>
           <li>
-            <a
+            <Link
+              to={"/Projects"}
               onClick={handleDown}
               onMouseEnter={() => setSection("projetos")}
               onMouseLeave={() => setSection(null)}
               href="#projetos"
             >
               Projetos
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
+              to={"/Contact"}
               onClick={handleDown}
               onMouseEnter={() => setSection("contato")}
               onMouseLeave={() => setSection(null)}
               href="#contato"
             >
               Contato
-            </a>
+            </Link>
           </li>
         </ul>
         <div ref={burguerRef} className={styles.hamburguer} id="hamburguer">

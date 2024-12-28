@@ -1,0 +1,130 @@
+.card {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+
+  clip-path: circle(0% at 100% 100%);
+  
+
+  transition-delay: 1s;
+}
+
+.circle{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle1{
+    width: 100px;
+    height: 120px;
+    top: -10px;
+    left: -20px;
+
+    animation: circle1 15s linear infinite alternate-reverse;
+}
+
+.circle2{
+    width: 200px;
+    height: 200px;
+    top: -30px;
+    right: -40px;
+
+    animation: circle1 15s linear infinite alternate-reverse;
+}
+
+.circle3{
+    width: 200px;
+    height: 75px;
+    bottom: -70px;
+    left:calc(50% - 100px);
+
+    animation: circle1 12s linear infinite alternate-reverse;
+}
+
+.card h1 {
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.card p {
+  margin-bottom: 20px;
+  width: 70%;
+  z-index: 1;
+}
+
+.card a {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.438);
+  border-radius: 10px;
+  display: inline-block;
+  z-index: 1;
+
+  position: relative;
+
+  transition: all 0.3s ease-in;
+}
+
+.card a::after {
+  content: "";
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  border-radius: 10px;
+
+  clip-path: polygon(0 100%, 0 100%, 0 100%, 0% 100%);
+
+  
+}
+
+.card a:hover {
+  transform: scale(103%);
+  border-radius: 1px;
+}
+
+.card a:hover::after{
+    animation: border 1s ease-in;
+}
+
+@keyframes border {
+  0% {
+    clip-path: polygon(0 90%, 30% 90%, 30% 100%, 0% 100%);
+  }
+  25%{
+    clip-path: polygon(70% 90%, 100% 90%, 100% 100%, 70% 100%);
+  }
+  50%{
+    clip-path: polygon(90% 0, 100% 0, 100% 30%, 90% 30%);
+  }
+  75%{
+    clip-path: polygon(0 0, 10% 0, 10% 30%, 0 30%);
+  }
+  100%{
+    clip-path: polygon(0 70%, 10% 70%, 10% 100%, 0 100%);
+  }
+}
+
+@keyframes circle1 {
+    100%{
+        transform: scale(200%);
+    }
+}
+
+@media (max-width: 1100px) {
+    .card p {
+        width: 100%;
+      }
+}

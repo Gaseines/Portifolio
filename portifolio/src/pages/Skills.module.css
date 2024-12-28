@@ -25,10 +25,59 @@
 
 .container_servicos{
     display: flex;
+    
+    
+}
+
+
+.left{
+  animation: left linear forwards;
+  animation-timeline: view();
+  animation-range: cover 0% cover 24%;
+}
+
+.right{
+  animation: right linear forwards;
+  animation-timeline: view();
+  animation-range: cover 0% cover 24%;
+}
+
+
+@keyframes left {
+  0%{
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes right {
+  0%{
+    transform: translateX(200%);
+  }
 }
 
 @media (max-width: 1100px) {
   .card_ia img {
     width: 30px;
   }
+
+  .container_servicos{
+    flex-wrap: wrap;
+  }
+
+  .ani_carrossel{
+    animation: none;
+  }
+
+  .left{
+    
+    animation: none;
+    
+  }
+  
+  .right{
+    
+    animation: none;
+    
+  }
+  
 }

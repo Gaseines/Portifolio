@@ -20,6 +20,8 @@ import Card from "../components/layouts/Card";
 import CardServicos from "../components/layouts/CardServicos";
 
 const Skills = () => {
+
+
   return (
     <div className={styles.container}>
       <Titulo>Habilidades adquiridas</Titulo>
@@ -106,34 +108,57 @@ const Skills = () => {
       </div>
 
       <Titulo className={styles.titulo2}>Serviços Oferecidos</Titulo>
-      <div className={styles.container_servicos}>
-        <CardServicos
-          title={"Lading-page"}
-          desc={
-            "Desenvolvimento de uma lading-page responsiva, do seu estilo, com as suas preferências"
-          }
-        />
+      <div className={`${styles.container_servicos}`}>
+        <div className={`${styles.coluna}`}>
+          <CardServicos
+          estilo={styles.left}
+            title={"Lading-page"}
+            desc={
+              "Desenvolvimento de uma lading-page responsiva, do seu estilo, com as suas preferências."
+            }
+          />
 
-        <CardServicos
-          title={"Portifólio Web"}
-          desc={
-            "Desenvolvimento de um portifólio exclusivo e com sua identidade"
-          }
-        />
+          <CardServicos
+          estilo={styles.left}
+            title={"Portifólio Web"}
+            desc={
+              "Desenvolvimento de um portifólio exclusivo e com sua identidade."
+            }
+          />
 
-        <CardServicos
-          title={"Website"}
-          desc={
-            "Desenvolvimento de sites responsivos e personalizados que se adaptam a qualquer dispositivo"
-          }
-        />
+          <CardServicos
+          estilo={styles.left}
+            title={"Website"}
+            desc={
+              "Desenvolvimento de sites responsivos e personalizados que se adaptam a qualquer dispositivo."
+            }
+          />
+        </div>
+        <div className={`${styles.coluna}`}>
+          <CardServicos
+          estilo={styles.right}
+            title={"Página de Vendas"}
+            desc={
+              "Quer vender mais? Faço páginas que mostram seus produtos de forma clara e atraente, ajudando a aumentar as vendas."
+            }
+          />
 
-        <CardServicos
-          title={"Pagnia de Vendas"}
-          desc={
-            "Precisa de uma página para vender mais? Faço páginas que mostram seus produtos de forma clara e atraente, ajudando a aumentar as vendas"
-          }
-        />
+          <CardServicos
+          estilo={styles.right}
+            title={"Site de Casamento"}
+            desc={
+              "Quer um site para o seu casameto? Estou a disposição para crialo e desenvolvelo da melhor forma."
+            }
+          />
+
+          <CardServicos
+          estilo={styles.right}
+            title={"Leitura de Planilhas"}
+            desc={
+              "Posso desenvolver um sistema simples de leitura de planilha com as suas preferências."
+            }
+          />
+        </div>
       </div>
     </div>
   );

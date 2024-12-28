@@ -6,7 +6,7 @@ import animacao from "../Animacoes.module.css";
 import Button from "../layouts/Button";
 import Item from "../layouts/Item";
 import Titulo from "../layouts/Titulo";
-import insta from "../../image/icone_instagram.png";
+import linkedin from "../../image/icone_linkedin.png";
 import git from "../../image/icone_github.png";
 
 function Contato({ isSection }) {
@@ -51,14 +51,14 @@ function Contato({ isSection }) {
         </a>
       </div>
 
-      <Titulo>Redes Sociais</Titulo>
+      <Titulo>Redes Profissionais</Titulo>
       <div className={styles.container_icones}>
         <a className={styles.img_links}
           target="_blank"
           rel="noreferrer"
-          href="https://www.instagram.com/gaseines/"
+          href="https://www.linkedin.com/in/gabriel-nunes-42218b271/"
         >
-          <img className={styles.icones} src={insta} alt="" />
+          <img className={styles.icones} src={linkedin} alt="" />
         </a>
         <a className={styles.img_links} target="_blank" rel="noreferrer" href="https://github.com/Gaseines">
           <img className={styles.icones} src={git} alt="" />

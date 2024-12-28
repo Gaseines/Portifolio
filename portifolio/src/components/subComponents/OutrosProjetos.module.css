@@ -12,12 +12,18 @@
     text-decoration: none;
 }
 
+.container:hover .projeto{
+    transform: scale(110%);
+}
+
 .projeto{
     position: absolute;
     width: var(--widthP);
     height: var(--heightP);
     left: calc(50% - (var(--widthP) / 2));
     top: calc(50% - (var(--heightP) / 2) + 20px);
+
+    transition: all .5s ease-in-out;
 }
 
 .projeto1{
