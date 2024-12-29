@@ -8,7 +8,7 @@ const Card = ({ icon, title, disable, years, classe }) => {
     <>
       {disable === false ? (
         <div className={`${styles.c_card} ${styles.c_card_active} ${classe}`}>
-          <img className={styles.i_img} src={icon} />
+          <img className={styles.i_img} src={icon} alt="img" />
           <h2 className={styles.t_title}>{title}</h2>
           <div className={styles.d_division}></div>
           <p className={styles.d_desc}>{years}</p>

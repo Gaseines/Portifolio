@@ -15,7 +15,7 @@ function App() {
   const [isSection, setSection] = useState(false);
 
   return (
-    <BrowserRouter basename="/Portifolio">
+    <BrowserRouter>
       {/* Menu */}
       <Menu setSection={setSection} />
 
