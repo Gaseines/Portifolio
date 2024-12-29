@@ -43,7 +43,7 @@ function Contato({ isSection }) {
           <Button name="WhatsApp" />
         </a>
         <a
-          href="mailto:gaseinesdzn@hotmail.com?subject=Interesse%20em%20projeto&body=Olá%20Gabriel,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+          href="mailto:contato.gsn_dev@hotmail.com?subject=Interesse%20em%20projeto&body=Olá%20Gabriel,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
           target="_blank"
           rel="noopener noreferrer"
         >

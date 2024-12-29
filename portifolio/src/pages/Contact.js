@@ -9,7 +9,7 @@ import Titulo from "../components/layouts/Titulo";
 
 const Contact = () => {
   const [card, setCard] = useState("whats");
-  
+
   const whatsIconRef = useRef(null);
   const emailIconRef = useRef(null);
   const linkedinIconRef = useRef(null);
@@ -23,31 +23,26 @@ const Contact = () => {
       linkedinIconRef.current.style.color = "var(--bege)";
       instaIconRef.current.style.color = "var(--bege)";
       setCard("whats");
-      
     } else if (name === "email") {
       emailIconRef.current.style.color = "black";
       whatsIconRef.current.style.color = "var(--bege)";
       linkedinIconRef.current.style.color = "var(--bege)";
       instaIconRef.current.style.color = "var(--bege)";
       setCard("email");
-      
     } else if (name === "linkedin") {
       linkedinIconRef.current.style.color = "black";
       emailIconRef.current.style.color = "var(--bege)";
       whatsIconRef.current.style.color = "var(--bege)";
       instaIconRef.current.style.color = "var(--bege)";
       setCard("linkedin");
-      
     } else if (name === "insta") {
       instaIconRef.current.style.color = "black";
       emailIconRef.current.style.color = "var(--bege)";
       linkedinIconRef.current.style.color = "var(--bege)";
       whatsIconRef.current.style.color = "var(--bege)";
       setCard("insta");
-      
     }
   };
-
 
   return (
     <div className={styles.container}>
@@ -70,7 +65,7 @@ const Contact = () => {
 
         <SocialCard
           link={
-            "mailto:gaseinesdzn@hotmail.com?subject=Interesse%20em%20projeto&body=Olá%20Gabriel,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+            "mailto:contato.gsn_dev@hotmail.com?subject=Interesse%20em%20projeto&body=Olá%20Gabriel,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
           }
           style={`${styles.email_card} ${styles.cardE} ${styles.teste} ${
             card === "email" ? styles.is_active : ""
@@ -84,9 +79,7 @@ const Contact = () => {
         <SocialCard
           link={"https://www.linkedin.com/in/gabriel-nunes-42218b271/"}
           style={`${styles.linkedin_card} ${styles.cardE} ${
-            card === "linkedin"
-              ? styles.is_active
-              : ""
+            card === "linkedin" ? styles.is_active : ""
           }`}
           title={"LinkedIn"}
           desc={
