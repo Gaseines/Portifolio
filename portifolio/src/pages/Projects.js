@@ -12,6 +12,7 @@ import likizoa from "../image/imagesProjetos/likizoa.jpg";
 import wedding from "../image/imagesProjetos/wedding.jpg";
 import coffee from "../image/imagesProjetos/coffee.jpg";
 import layouts from "../image/imagesProjetos/layouts.jpg";
+import miniblog from "../image/imagesProjetos/miniblog.jpg";
 
 const Projects = () => {
   return (
@@ -48,6 +49,18 @@ const Projects = () => {
         name={"Cafeteria"}
         desc={
           "Um projeto autoral, feito na faculdade, para uma cafeteria com apenas retirada na loja, para pessoas normais com a pressa do dia a dia."
+        }
+      />
+
+      <div className={styles.division}></div>
+
+      <Project
+        linkProjeto={"https://gaseines.github.io/miniBLOG/"}
+        linkGit={"https://github.com/Gaseines/miniBLOG"}
+        img={miniblog}
+        name={"Mini BLOG"}
+        desc={
+          "Um projeto pessoal. Um mini blog com possibilidade de postagem de posts, cadastro, login, com autenticação, usado React e Firebase."
         }
       />
 
