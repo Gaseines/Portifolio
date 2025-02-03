@@ -13,6 +13,7 @@ import wedding from "../image/imagesProjetos/wedding.jpg";
 import coffee from "../image/imagesProjetos/coffee.jpg";
 import layouts from "../image/imagesProjetos/layouts.jpg";
 import miniblog from "../image/imagesProjetos/miniblog.jpg";
+import clima from "../image/imagesProjetos/clima.jpg"
 
 const Projects = () => {
   return (
@@ -48,7 +49,19 @@ const Projects = () => {
         img={coffee}
         name={"Cafeteria"}
         desc={
-          "Um projeto autoral, feito na faculdade, para uma cafeteria com apenas retirada na loja, para pessoas normais com a pressa do dia a dia."
+          "Um projeto autoral, feito na faculdade, para uma cafeteria com apenas retirada na loja, para pessoas que sofrem com a pressa do dia a dia."
+        }
+      />
+
+      <div className={styles.division}></div>
+
+      <Project
+        linkProjeto={"https://gaseines.github.io/EasyClimate/"}
+        linkGit={"https://github.com/Gaseines/EasyClimate"}
+        img={clima}
+        name={"Easy Climate"}
+        desc={
+          "Um projeto autoral para consulta do clima, utilizando uma API de clima/tempo, com possibilidade de pesquisa de clima de um local específico. "
         }
       />
 
